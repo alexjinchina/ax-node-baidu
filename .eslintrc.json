@@ -1,0 +1,32 @@
+{
+  "extends": ["standard", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": ["prettier", "standard", "node"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "no-debugger": "warn",
+    "eol-last": "error",
+    "no-unused-vars": "warn",
+    "no-useless-constructor": "warn",
+    "semi": ["warn", "always"],
+    "comma-dangle": [
+      "warn",
+      {
+        "arrays": "ignore"
+      }
+    ]
+  }
+}
