@@ -1,1 +1,1 @@
-console.debug("hello world")
+import BaiduClient from "./baidu-client";
