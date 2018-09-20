@@ -2,4 +2,4 @@ import request from "request";
 import requestPromise from "request-promise";
 export process from "process";
 
-export { requestPromise as fetch };
+export { requestPromise as fetchAsync };

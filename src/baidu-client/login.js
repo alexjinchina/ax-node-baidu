@@ -1,5 +1,4 @@
-import requestPromise from "request-promise";
-import request from "request";
+import { fetchAsync } from "../utils";
 
 export default class login {
   constructor(client) {
@@ -9,7 +8,7 @@ export default class login {
 
   async test() {
     console.log("init baidu env");
-    const response = await requestPromise({
+    const response = await fetchAsync({
       uri: "https://wappass.baidu.com/",
       resolveWithFullResponse: true
     });
