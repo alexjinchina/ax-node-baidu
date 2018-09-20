@@ -11,8 +11,6 @@ export default class login {
     console.log("init baidu env");
     const response = await requestPromise({
       uri: "https://wappass.baidu.com/",
-      proxy: "http://web-proxy.oa.com:8080",
-
       resolveWithFullResponse: true
     });
 
